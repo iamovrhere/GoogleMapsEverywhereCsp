@@ -1,0 +1,21 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "{79e11935-4aaf-412c-85c1-9921b81e328f}"
+    }
+  },
+  "description": "All Google Maps Everywhere Content Security Policy",
+  "manifest_version": 2,
+  "name": "Google Maps Everywhere CSP",
+  "version": "1.0.0",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
