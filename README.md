@@ -1,5 +1,7 @@
-Google Maps Everywhere CSP
+Google Maps Everywhere CSP (Firefox Addon)
 ======
+
+![Google Maps Everywhere CSP Plugin Icon](./src/icons/icon-raw.png)
 
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is an important aspect of Web Security; plugging the potential holes where [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) may force its way through (compromised 3rd parties, libraries, novice mistakes, etc.). It works by limiting the sources and contexts in which JavaScript may execute.
 
@@ -7,16 +9,33 @@ Unfortunately, this means that if an end user wishes to insert APIs into the pag
 
 This is a (very quick) Firefox plugin for the purposes of allowing Google Maps API everywhere by modifying the CSP.
 
+## Usage
+
+Currently the extension is unpublished.
+
+### Installation from Zip
+
+1. Download the [current zip](./bin/google-maps-everywhere-csp.zip).
+2. Go to `about:addons`
+3. Click the gear (in line with "Manage Extensions")
+4. Click "Install Add-on From File"
+5. Read the Caution that the plugin is unverified and press "Add" if you accept project's [License](./LICENSE).
+6. ???
+
+### Debugging
+
+Follow [FireFox Instructions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Temporary_Installation_in_Firefox) for installation.
+
 ## TODO's
 
-- Make websites configurable
-- Split off into its own plugin of hosts -> api pairings
-- Publish?
+- [ ] Clearer instructions
+- [ ] Make websites configurable
+- [ ] Split off into its own plugin of hosts -> api pairings
+- [ ] Publish?
 
-##License
-***
+## License
 
-####MIT LICENSE
+#### MIT LICENSE
 
 Copyright (c) 2019  Jason J. (iamovrhere)
 
