@@ -29,6 +29,7 @@ Follow [FireFox Instructions](https://developer.mozilla.org/en-US/docs/Mozilla/A
 ## TODO's
 
 - [ ] Clearer instructions
+- [ ] Tests.
 - [ ] Make websites configurable
 - [ ] Split off into its own plugin of hosts -> api pairings
 - [ ] Publish?
