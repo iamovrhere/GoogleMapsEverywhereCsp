@@ -20,7 +20,7 @@ Currently the extension is unpublished.
 3. Click the gear (in line with "Manage Extensions")
 4. Click "Install Add-on From File"
 5. Read the Caution that the plugin is unverified and press "Add" if you accept project's [License](./LICENSE).
-6. ???
+6. Done.
 
 ### Debugging
 
