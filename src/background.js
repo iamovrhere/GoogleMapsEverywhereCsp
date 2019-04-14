@@ -1,6 +1,7 @@
 const GOOGLE_MAPS_API = 'https://maps.googleapis.com';
 const GOOGLE_MAPS_STATIC = 'https://maps.gstatic.com';
 const GOOGLE_MAPS_CSP = {
+  'default-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'script-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'connect-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'style-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
@@ -8,6 +9,9 @@ const GOOGLE_MAPS_CSP = {
   'media-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'img-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'font-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
+  'frame-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
+  'frame-ancestors' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
+  'worker-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
 };
 
 /**
@@ -39,9 +43,6 @@ function updateCspHeaders(e) {
         }
         // Existing value.
         return csp;
-      }).concat(gMapsCspKeys.map(mapCsp => {
-        // Concat remaining unfound CSP values.
-        return `${mapCsp} ${GOOGLE_MAPS_CSP[mapCsp]}`;
       }));
 
       header.value = updatedCsp.join(';');
