@@ -43,7 +43,7 @@ function updateCspHeaders(e) {
         }
         // Existing value.
         return csp;
-      }));
+      });
 
       header.value = updatedCsp.join(';');
     }
