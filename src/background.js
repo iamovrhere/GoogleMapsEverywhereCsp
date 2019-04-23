@@ -1,10 +1,11 @@
 const GOOGLE_MAPS_API = 'https://maps.googleapis.com';
 const GOOGLE_MAPS_STATIC = 'https://maps.gstatic.com';
+const GOOGLE_FONTS = 'https://fonts.googleapis.com';
 const GOOGLE_MAPS_CSP = {
-  'default-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
+  'default-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC} ${GOOGLE_FONTS}`,
   'script-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'connect-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
-  'style-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
+  'style-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC} ${GOOGLE_FONTS}`,
   'object-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'media-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
   'img-src' : `${GOOGLE_MAPS_API} ${GOOGLE_MAPS_STATIC}`,
